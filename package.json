@@ -12,10 +12,8 @@
   "dependencies": {
     "@nuxt/content": "^3.6.3",
     "@nuxt/eslint": "1.9.0",
-    "@nuxt/fonts": "0.11.4",
     "@nuxt/image": "1.11.0",
     "better-sqlite3": "12",
-    "better-sqlite3@12": "link:/better-sqlite3@12",
     "eslint": "^9.33.0",
     "nuxt": "^4.0.3",
     "vue": "^3.5.18",
@@ -23,7 +21,16 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
-      "better-sqlite3"
+      "@parcel/watcher",
+      "better-sqlite3",
+      "esbuild",
+      "sharp",
+      "unrs-resolver"
     ]
+  },
+  "devDependencies": {
+    "@nuxt/fonts": "0.11.4",
+    "sass": "^1.91.0",
+    "sass-embedded": "^1.91.0"
   }
 }

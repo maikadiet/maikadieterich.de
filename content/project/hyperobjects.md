@@ -1,12 +1,10 @@
 ---
 date: 2025-06
-title: Design in the Cracks
+title: Hyperobjects
 metadata: [Publication]
 urls: []
 collaborators: Design and Production together with Ant Barras and Luca Weiß.
-thumbnail: ../../public/projects/publishing-carefully_title.jpeg
-images: []
-videos: []
 ---
 Here goes the English description of the project.  
 You can use **Markdown** for formatting, links, etc.
+

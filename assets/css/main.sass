@@ -1,0 +1,127 @@
+:root
+  /* Colors */
+  --color-typography: #000000
+  --color-background: #fff4d1
+
+  /* Typography */
+  --font-family-base: 'Xanh Mono', monospace
+  /* ... (rest of typography variables remain the same) ... */
+
+  /* Grid */
+  --grid-gutter: 1rem
+
+/* Typography Classes */
+.body-text
+  font-size: var(--font-size-base)
+
+.header-text
+  font-size: var(--font-size-lg)
+
+  // Apply font size to common content elements
+  p, h1, h2, h3, h4, h5, h6, li, div
+    font-size: inherit
+
+/* CSS Grid System */
+.container
+  width: 100%
+  max-width: 1200px
+  margin-left: auto
+  margin-right: auto
+  padding-left: calc(var(--grid-gutter) / 2)
+  padding-right: calc(var(--grid-gutter) / 2)
+
+.grid
+  display: grid
+  grid-template-columns: repeat(12, 1fr)
+  grid-column-gap: var(--grid-gutter)
+  grid-row-gap: var(--grid-gutter)
+
+.col-1
+  grid-column: span 1
+.col-2
+  grid-column: span 2
+.col-3
+  grid-column: span 3
+.col-4
+  grid-column: span 4
+.col-5
+  grid-column: span 5
+.col-6
+  grid-column: span 6
+.col-7
+  grid-column: span 7
+.col-8
+  grid-column: span 8
+.col-9
+  grid-column: span 9
+.col-10
+  grid-column: span 10
+.col-11
+  grid-column: span 11
+.col-12
+  grid-column: span 12
+
+/* Project Grid */
+.project-grid
+  display: grid
+  grid-template-columns: repeat(2, 1fr) // 2 columns
+  grid-column-gap: var(--grid-gutter)
+  grid-row-gap: var(--grid-gutter)
+
+.project-item
+  // Styles for project items
+
+.project-link
+  display: block
+  text-decoration: none
+  color: var(--color-typography)
+  height: 100%
+  box-sizing: border-box
+
+  &:hover
+    text-decoration: underline
+
+/* General Styling */
+body
+  background-color: var(--color-background)
+  color: var(--color-typography)
+  font-family: var(--font-family-base), monospace
+  font-size: var(--font-size-base)
+  font-weight: var(--font-weight-normal)
+  line-height: var(--line-height-base)
+  padding: 3em
+
+/* Navigation */
+header
+  position: fixed
+  top: 1rem
+  right: 1rem
+  z-index: 1000
+
+nav
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+
+  nuxt-link
+    margin-bottom: 0.5rem
+    text-decoration: none
+    color: var(--color-typography)
+
+    &:last-child
+      margin-bottom: 0
+
+    &:hover
+      text-decoration: underline
+
+/* Paragraphs */
+p
+  margin-top: 0
+
+/* Extras */
+a
+  color: var(--color-typography)
+  text-decoration: none
+
+a:hover
+  text-decoration: underline
