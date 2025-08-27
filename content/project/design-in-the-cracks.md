@@ -1,10 +1,10 @@
 ---
 date: 2025-06
-title: Publishing carefully?
+title: Design in the Cracks
 metadata: 
 urls:
 collaborators:
-thumbnail: ../../public/projects/design-in-the-cracks_title.jpeg
+thumbnail: "design-in-the-cracks_title.jpeg"
 images: []
 videos: []
 ---

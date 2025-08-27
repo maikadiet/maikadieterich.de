@@ -19,6 +19,13 @@
           class="project-item"
         >
           <NuxtLink :to="project.path" class="project-link">
+            <!-- Thumbnail image if it exists -->
+            <img
+              v-if="project.meta?.thumbnail"
+              :src="`/projects/${project.meta.thumbnail}`"
+              :alt="`${project.title} thumbnail`"
+              class="project-thumbnail"
+            />
             {{ project.title }}
           </NuxtLink>
         </div>

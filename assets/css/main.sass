@@ -1,7 +1,7 @@
 :root
   /* Colors */
   --color-typography: #000000
-  --color-background: #fff4d1
+  --color-background: #fdf7e7
 
   /* Typography */
   --font-family-base: 'Xanh Mono', monospace
@@ -61,6 +61,13 @@
 .col-12
   grid-column: span 12
 
+/* Project Images */
+.project-image
+  margin-bottom: 1rem
+
+  &:last-child
+    margin-bottom: 0
+
 /* Project Grid */
 .project-grid
   display: grid
@@ -68,11 +75,13 @@
   grid-column-gap: var(--grid-gutter)
   grid-row-gap: var(--grid-gutter)
 
+/* Project Items */
 .project-item
-  // Styles for project items
+  margin-bottom: 1rem
 
 .project-link
   display: block
+  padding: 0.5rem
   text-decoration: none
   color: var(--color-typography)
   height: 100%
@@ -80,6 +89,12 @@
 
   &:hover
     text-decoration: underline
+
+/* Project Thumbnails */
+.project-thumbnail
+  width: 100%
+  height: auto
+  margin-bottom: 0.5rem
 
 /* General Styling */
 body

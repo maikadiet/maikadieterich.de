@@ -1,11 +1,11 @@
 ---
 date: 2025-06
-title: Design in the Cracks
+title: Publishing Carefully?
 metadata: [Publication]
 urls: []
 collaborators: Design and Production together with Ant Barras and Luca Weiß.
-thumbnail: ../../public/projects/publishing-carefully_title.jpeg
-images: []
+thumbnail: "publishing-carefully_title.jpeg"
+images: ['publishing-carefully_title.jpeg', 'design-in-the-cracks_title.jpeg']
 videos: []
 ---
 Here goes the English description of the project.  
