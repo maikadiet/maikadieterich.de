@@ -11,14 +11,21 @@
 
     <!-- Projects Grid -->
     <div v-if="projects && projects.length > 0">
-      <h2>Projects</h2>
+      <button
+          v-for="filter in ['web','print','installation','research']"
+          :key="filter"
+          :class="{ active: activeFilter === filter }"
+          @click="activeFilter = filter"
+      >
+        {{ filter }}
+      </button>
       <div class="project-grid">
         <div
           v-for="project in projects"
           :key="project.path"
           class="project-item"
         >
-          <NuxtLink :to="project.path" class="project-link">
+          <NuxtLink :to="project.path" >
             <!-- Thumbnail image if it exists -->
             <img
               v-if="project.meta?.thumbnail"
@@ -26,7 +33,7 @@
               :alt="`${project.title} thumbnail`"
               class="project-thumbnail"
             />
-            {{ project.title }}
+            <p class="project-link" > {{ project.title }} </p>
           </NuxtLink>
         </div>
       </div>
@@ -52,6 +59,8 @@ const projects = computed(() => {
   // projectItems?.sort((a, b) => new Date(b.date) - new Date(a.date))
   return projectItems
 })
+
+const activeFilter = ref(null)
 </script>
 
 <style scoped>
