@@ -17,7 +17,7 @@
             class="project-image"
           >
             <img
-              :src="`/projects/${image}`"
+              :src="`/project/${image}`"
               :alt="`Project image ${index + 1}`"
               style="width: 100%; height: auto;"
             />

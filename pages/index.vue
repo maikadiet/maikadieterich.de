@@ -15,7 +15,7 @@
           v-for="filter in ['web','print','installation','research']"
           :key="filter"
           :class="{ active: activeFilter === filter }"
-          @click="activeFilter = filter"
+          @click="toggleFilter(filter)"
       >
         {{ filter }}
       </button>
@@ -61,6 +61,10 @@ const projects = computed(() => {
 })
 
 const activeFilter = ref(null)
+
+function toggleFilter(filter) {
+  activeFilter.value = activeFilter.value === filter ? null : filter
+}
 </script>
 
 <style scoped>
