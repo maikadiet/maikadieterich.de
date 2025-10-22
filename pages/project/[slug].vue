@@ -1,14 +1,14 @@
 <template>
   <div class="container" v-if="project">
     <div class="grid">
-      <!-- Main Content - Takes 2/3 width (8 out of 12 columns) -->
-      <div class="col-8">
+      <!-- Main Content -->
+      <div class="col-6">
         <h1>{{ project.title }}</h1>
         <ContentRenderer :value="project" />
       </div>
 
-      <!-- Images - Takes 1/3 width (4 out of 12 columns) -->
-      <div class="col-4">
+      <!-- Images -->
+      <div class="col-6">
         <!-- Show images if they exist -->
         <div v-if="project.meta?.images && project.meta.images.length > 0">
           <div
@@ -27,7 +27,7 @@
         <!-- Show thumbnail if no images exist -->
         <div v-else-if="project.meta?.thumbnail" class="project-image">
           <img
-            :src="`/projects/${project.meta.thumbnail}`"
+            :src="`/project/${project.meta.thumbnail}`"
             :alt="`${project.title} thumbnail`"
             style="width: 100%; height: auto;"
           />

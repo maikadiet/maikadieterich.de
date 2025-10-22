@@ -29,7 +29,7 @@
             <!-- Thumbnail image if it exists -->
             <img
               v-if="project.meta?.thumbnail"
-              :src="`/projects/${project.meta.thumbnail}`"
+              :src="`/project/${project.meta.thumbnail}`"
               :alt="`${project.title} thumbnail`"
               class="project-thumbnail"
             />
@@ -47,13 +47,13 @@ const { data: allContent } = await useAsyncData('all-content', async () => {
   return await queryCollection('content').all()
 })
 
-// Separate homepage content and projects
+// Separate homepage content and project
 const homepageContent = computed(() => {
   return allContent.value?.find(item => item.path === '/')
 })
 
 const projects = computed(() => {
-  // Filter projects and potentially sort them (e.g., by date if available in frontmatter)
+  // Filter project and potentially sort them (e.g., by date if available in frontmatter)
   const projectItems = allContent.value?.filter(item => item.path.startsWith('/project'))
   // Example: Sort by a 'date' field in frontmatter (newest first)
   // projectItems?.sort((a, b) => new Date(b.date) - new Date(a.date))
