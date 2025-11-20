@@ -3,12 +3,18 @@
     <div class="grid">
       <!-- Main Content -->
       <div class="col-6">
-        <h1>{{ project.title }}</h1>
+        <h3 class="project-title">{{ project.title }}</h3>
+        <div class="metadata">
+          <h6 class="pixel-text">{{ project.meta.date }}</h6>
+          <h6 class="pixel-text">{{ project.meta.metadata }}</h6>
+          <h6 class="pixel-text">{{ project.meta.collaborators }}</h6>
+          <h6 class="pixel-text">{{ project.meta.urls }}</h6>
+        </div>
         <ContentRenderer :value="project" />
       </div>
 
       <!-- Images -->
-      <div class="col-6">
+      <div class="col-5">
         <!-- Show images if they exist -->
         <div v-if="project.meta?.images && project.meta.images.length > 0">
           <div
@@ -53,9 +59,10 @@ const { data: project } = await useAsyncData(`project-${slug}`, async () => {
   return allContent.find(item => item.path === `/project/${slug}`)
 })
 
-// Function to convert file system path to URL path
-function convertPathToUrl(path) {
-  // Remove ../../public prefix and return the rest
-  return path.replace('../../public', '')
-}
 </script>
+
+<style lang="sass">
+.metadata
+  margin-bottom: 40px
+  max-width: 300px
+</style>

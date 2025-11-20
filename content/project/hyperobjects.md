@@ -1,7 +1,7 @@
 ---
-date: 2025-06
+date: 2022
 title: Hyperobjects
-metadata: [Publication]
+metadata: [VR]
 urls: []
 collaborators: Design and Production together with Ant Barras and Luca Weiß.
 ---
