@@ -1,7 +1,7 @@
 ---
 date: 2025-06
 title: Un/learn AI
-metadata: [Publication]
+metadata: print
 urls: []
 collaborators: Lars Hembacher, Paul Eßer, Francesco Scheffzcyk
 thumbnail: "unlearn-ai-books.png"
