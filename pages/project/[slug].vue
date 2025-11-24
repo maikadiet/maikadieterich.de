@@ -2,19 +2,19 @@
   <div class="container" v-if="project">
     <div class="grid">
       <!-- Main Content -->
-      <div class="col-6">
+      <div class="col-5">
         <h3 class="project-title">{{ project.title }}</h3>
         <div class="metadata">
-          <h6 class="pixel-text">{{ project.meta.date }}</h6>
-          <h6 class="pixel-text">{{ project.meta.metadata }}</h6>
-          <h6 class="pixel-text">{{ project.meta.collaborators }}</h6>
-          <h6 class="pixel-text">{{ project.meta.urls }}</h6>
+          <h5 class="pixel-text">{{ project.meta.date }}</h5>
+          <h5 class="pixel-text">{{ project.meta.metadata }}</h5>
+          <h5 class="pixel-text">{{ project.meta.collaborators }}</h5>
+          <h5 class="pixel-text">{{ project.meta.urls }}</h5>
         </div>
         <ContentRenderer :value="project" />
       </div>
 
       <!-- Images -->
-      <div class="col-5">
+      <div class="col-7">
         <!-- Show images if they exist -->
         <div v-if="project.meta?.images && project.meta.images.length > 0">
           <div
