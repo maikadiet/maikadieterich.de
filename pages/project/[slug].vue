@@ -2,15 +2,15 @@
   <div class="container" v-if="project">
     <div class="grid">
       <!-- Main Content -->
-      <div class="col-5">
+      <div class="col-5 sticky">
         <h3 class="project-title">{{ project.title }}</h3>
         <div class="metadata">
-          <h5 class="pixel-text">{{ project.meta.date }}</h5>
-          <h5 class="pixel-text">{{ project.meta.metadata }}</h5>
-          <h5 class="pixel-text">{{ project.meta.collaborators }}</h5>
-          <h5 class="pixel-text">{{ project.meta.urls }}</h5>
+          <h5 class="no-margin">{{ project.meta.date }}</h5>
+          <h5 class="no-margin">{{ project.meta.metadata }}</h5>
+          <h5 class="no-margin">{{ project.meta.collaborators }}</h5>
+          <h5 class="no-margin">{{ project.meta.urls }}</h5>
         </div>
-        <ContentRenderer :value="project" />
+        <ContentRenderer :value="project" class="authentic-sans"/>
       </div>
 
       <!-- Images -->
@@ -65,4 +65,10 @@ const { data: project } = await useAsyncData(`project-${slug}`, async () => {
 .metadata
   margin-bottom: 40px
   max-width: 300px
+
+.no-margin
+  margin: 0 0 5px 0
+
+.sticky
+  position: static
 </style>

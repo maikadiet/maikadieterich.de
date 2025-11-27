@@ -53,9 +53,9 @@ const homepageContent = computed(() => {
 })
 
 const projects = computed(() => {
-  // Filter project and potentially sort them (e.g., by date if available in frontmatter)
+  // Filter project and potentially sort them
   const projectItems = allContent.value?.filter(item => item.path.startsWith('/project'))
-  // Example: Sort by a 'date' field in frontmatter (newest first)
+  // Sort by a 'date' field in frontmatter (newest first)
   // projectItems?.sort((a, b) => new Date(b.date) - new Date(a.date))
   return projectItems
 })

@@ -9,6 +9,7 @@
   /* Typography */
   --font-family-base: 'Xanh Mono', monospace
   --font-family-pixels: 'NF Pixels', sans-serif
+  --font-family-authentic: 'Authentic Sans', sans-serif
   --font-size-base: 1.2rem
   --font-size-lg: 1.8rem
 
@@ -30,6 +31,9 @@
   font-family: var(--font-family-pixels), sans-serif
   margin: 0.33rem 0 0.33rem 0
 
+.authentic-sans
+  font-family: var(--font-family-authentic), sans-serif
+
 /* Buttons */
 button
   background: none
@@ -47,7 +51,7 @@ button
 
   &.active::before
     content: "x "
-    font-family: var(--font-family-pixels), sans-serif
+    font-family: var(--font-family-authentic), sans-serif
 
 .project-item
   position: relative
@@ -105,7 +109,7 @@ nav
   flex-direction: column
   align-items: flex-end
   a:hover
-    font-family: var(--font-family-pixels)
+    font-family: var(--font-family-authentic), sans-serif // add ease?
 
 /* Paragraphs */
 p
