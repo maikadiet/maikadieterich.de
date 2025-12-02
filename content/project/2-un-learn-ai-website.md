@@ -1,8 +1,8 @@
 ---
-date: 2025-10
+date: 2025
 title: Un/learn AI Website
-metadata:
-urls:
+metadata: Web
+urls: https://gestaltung.unlearn.ai/
 collaborators: 
 thumbnail: "unlearn-ai-web.png"
 images: []

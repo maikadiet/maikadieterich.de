@@ -1,8 +1,8 @@
 ---
-date: 2024
+date: 2025
 title: Learning platform
-metadata: web
-urls:
+metadata: Web
+urls: https://llp.kitegg.de/
 collaborators: In collaboration with Jean Böhm, Isabela Dimarco and Francesco Scheffczyk while working at KITeGG
 thumbnail: "learning-platform.png"
 images: ['Screenshot 41.png', 'Screenshot 59.png', 'Screenshot-7.03.png',]

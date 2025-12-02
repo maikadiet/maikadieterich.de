@@ -1,16 +1,20 @@
 <template>
-  <layout>
-  </layout>
+  <header>
+    <nav>
+      <nuxt-link to="/about">About</nuxt-link>
+      <nuxt-link to="/">Work</nuxt-link>
+    </nav>
+  </header>
   <div>
     <slot />
   </div>
+  <Footer>
+  </Footer>
 </template>
 
 <script setup lang="ts">
-
-import Layout from "~/components/layout.vue";
+import Footer from "~/components/footer.vue"
 </script>
 
-<style scoped>
-
+<style lang="sass" scoped>
 </style>

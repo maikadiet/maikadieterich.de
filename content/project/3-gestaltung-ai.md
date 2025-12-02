@@ -1,8 +1,8 @@
 ---
 date: 2024
 title: Gestaltung AI
-metadata: web
-urls:
+metadata: Web
+urls: https://gestaltung.ai/
 collaborators: In collaboration with Jean Böhm while working at KITeGG
 thumbnail: "gestaltung-ai.png"
 images: ['Screenshot 41.png', 'Screenshot 59.png', 'Screenshot-7.03.png', 'gestaltung-ai-33.png', 'gestaltung-ai-59.png',]

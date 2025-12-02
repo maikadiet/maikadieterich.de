@@ -12,7 +12,7 @@
     <!-- Projects Grid -->
     <div v-if="projects && projects.length > 0">
       <button
-          v-for="filter in ['web','print','installation','research']"
+          v-for="filter in ['Web','Print','Installation','Research']"
           :key="filter"
           :class="{ active: activeFilters.includes(filter) }"
           @click="toggleFilter(filter)"

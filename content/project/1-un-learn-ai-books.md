@@ -1,8 +1,8 @@
 ---
-date: 2025-06
+date: 2025
 title: Un/learn AI
-metadata: print
-urls: 
+metadata: Print
+urls: https://gestaltung.unlearn.ai/
 collaborators: Lars Hembacher, Paul Eßer, Francesco Scheffzcyk
 thumbnail: "Kiteeg_Katalog22014.jpg"
 images: ['Kiteeg_Katalog22088.jpg', 'Kiteeg_Katalog22103.jpg', 'Kiteeg_Katalog22117.jpg', 'Kiteeg_Katalog22134.jpg', 'Kiteeg_Katalog22189.jpg', 'Kiteeg_Katalog22205.jpg',]

@@ -1,8 +1,8 @@
 ---
 date: 2022
 title: Fingerprinting Language
-metadata: installation
-urls: []
+metadata: Installation
+urls:
 collaborators: 
 thumbnail: "Fingerprinting-language.png"
 images: []

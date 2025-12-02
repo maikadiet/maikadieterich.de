@@ -1,8 +1,8 @@
 ---
-date: 2025-06
+date: 2025
 title: Design in the Cracks
-metadata: print
-urls:
+metadata: Print
+urls: 
 collaborators: Design and production together with Ann Luca Weiß and Antoine Barras.
 thumbnail: "IMG_3767.jpeg"
 images: ['IMG_3652.jpeg', 'IMG_3712.jpeg', 'IMG_3767.jpeg', 'IMG_3787.jpeg', 'IMG_3788.jpeg', 'IMG_3795.jpeg', 'design-in-the-cracks_title.jpeg']
