@@ -70,5 +70,10 @@ const { data: project } = await useAsyncData(`project-${slug}`, async () => {
   margin: 0 0 5px 0
 
 .sticky
-  position: static
+  position: sticky
+  top: 0
+  height: 100vh
+  overflow-y: auto
+  padding-right: 1rem /* Optional: add space for scrollbar */
+
 </style>

@@ -45,11 +45,13 @@ button
   cursor: pointer
   display: inline-block
 
-  &:hover
+  &:hover,&.active
     text-decoration: none
+    font-style: italic
 
   &.active::before
     content: "x "
+    font-style: normal
     font-family: var(--font-family-authentic), sans-serif
 
 .project-item
@@ -107,8 +109,9 @@ nav
   display: flex
   flex-direction: column
   align-items: flex-end
-  a:hover
-    font-family: var(--font-family-authentic), sans-serif // add ease?
+
+a:hover
+  font-style: italic
 
 /* Paragraphs */
 p
