@@ -3,10 +3,12 @@ date: 2024
 title: Learning platform
 metadata: web
 urls:
-collaborators: In collaboration with Jean Böhm while working at KITeGG
+collaborators: In collaboration with Jean Böhm, Isabela Dimarco and Francesco Scheffczyk while working at KITeGG
 thumbnail: "learning-platform.png"
 images: ['Screenshot 41.png', 'Screenshot 59.png', 'Screenshot-7.03.png',]
 videos: []
 ---
-Here goes the English description of the project.  
-You can use **Markdown** for formatting, links, etc.
+The learning platform was developed in the KITeGG research project as the central place for access to the GPU cluster. Server reservations, service hosting and student access can be defined by teachers or researchers on the platform.
+Courses, course materials and student projects were also openly shared on the platform between the five schools.
+
+The basic UI design was developed by Isabela Dimarco and further developed by me. The software was written and maintained by Jean Böhm, Francesco Scheffzcy and myself.
