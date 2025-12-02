@@ -12,9 +12,15 @@
 </template>
 
 <script setup lang="ts">
-const { data: about } = await useAsyncData('about-content', async () => {
-  return await queryContent('about').findOne();
-});
+import { ContentRenderer } from '#components'
+
+const { data: allContent } = await useAsyncData('all-content', async () => {
+  return await queryCollection('content').all()
+})
+
+const about = computed(() => {
+  return allContent.value?.find(item => item.path === '/about')
+})
 </script>
 
 <style scoped>

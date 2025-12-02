@@ -14,7 +14,7 @@
       <button
           v-for="filter in ['web','print','installation','research']"
           :key="filter"
-          :class="{ active: activeFilter === filter }"
+          :class="{ active: activeFilters.includes(filter) }"
           @click="toggleFilter(filter)"
       >
         {{ filter }}
@@ -47,23 +47,41 @@ const { data: allContent } = await useAsyncData('all-content', async () => {
   return await queryCollection('content').all()
 })
 
-// Separate homepage content and project
+// Separate homepage content and projects
 const homepageContent = computed(() => {
   return allContent.value?.find(item => item.path === '/')
 })
 
+const activeFilters = ref([])
+
 const projects = computed(() => {
-  // Filter project and potentially sort them
-  const projectItems = allContent.value?.filter(item => item.path.startsWith('/project'))
-  // Sort by a 'date' field in frontmatter (newest first)
-  // projectItems?.sort((a, b) => new Date(b.date) - new Date(a.date))
-  return projectItems
+  // If no filters active, return all projects
+  let projectItems = allContent.value?.filter(item => item.path.startsWith('/project'))
+
+  // If no filters active, return all projects
+  if (activeFilters.value.length === 0) {
+    return projectItems
+  }
+
+  // Filter projects that have at least one of the active tags
+  return projectItems?.filter(project => {
+    const projectTags = project.meta?.metadata
+      ? project.meta.metadata.split(',').map(tag => tag.trim().toLowerCase())
+      : []
+
+    return activeFilters.value.some(filter =>
+      projectTags.includes(filter.toLowerCase())
+    )
+  })
 })
 
-const activeFilter = ref(null)
-
 function toggleFilter(filter) {
-  activeFilter.value = activeFilter.value === filter ? null : filter
+  const index = activeFilters.value.indexOf(filter)
+  if (index > -1) {
+    activeFilters.value.splice(index, 1)
+  } else {
+    activeFilters.value.push(filter)
+  }
 }
 </script>
 
