@@ -1,0 +1,11 @@
+---
+date: 2022
+title: Tanz auf dem Netz
+metadata: installation
+urls:
+collaborators: 
+thumbnail: ""
+images: []
+videos: []
+---
+Diese Website entstand im Rahmen der Ausstellung "Between Us" in der Kunsthallte Mainz und zeigt die Motion Tracking Daten des gleichnamigen Tanzstücks. Die Position der Tänzer*innen auf der Seite spiegelt die Position im Raum. Beim scrollen bewegen sich die Tänzer*innen durch die Zeit 

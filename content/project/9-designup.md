@@ -1,0 +1,17 @@
+---
+date: 2022
+title: DesignUP
+metadata: installation
+urls:
+collaborators: 
+thumbnail: ""
+images: []
+videos: []
+---
+DesignUp was a team of around 50 German and Senegalese Designers consisiting of mostly artists, product/fashion/industrial designers and artisans. We started working together digitally in 2021, focusing on upcycling. In May 2022 we got together in Dakar. The works were exhibited from the 24th – 29th of May in the “Super Mbalit Festival” as part of the Dak’Art Biennale Off programme.
+
+I worked with Papis Diop (artist and product designer). We designed two variations of screwless connections by modelling plastic bottles with heat, which we showcased in a coat hanger/sculpture. Together with Martin Bassène (specialised in metal work), I also designed a lamp out of different leftover materials.
+
+Papis Diop and Sabine Boger and I also gave a workshop during the festival, in which we used various rubbish materials to make paintbrushes with children of Yarrakh (the part of Dakar in which we had out exhibition).
+
+Photos by Sabine Boger and Maika Dieterich.
