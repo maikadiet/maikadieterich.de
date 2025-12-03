@@ -7,7 +7,7 @@
         <div class="metadata">
           <p class="no-margin">{{ project.meta.date }}</p>
           <p class="no-margin">{{ project.meta.metadata }}</p>
-          <a :href="`${project.meta.urls}`" target="_blank" rel="noopener noreferrer" class="no-margin">Go to Website</a>
+          <a class="underline" :href="`${project.meta.urls}`" target="_blank" rel="noopener noreferrer" class="no-margin">Go to Website</a>
         </div>
           <p class="margin-bottom">{{ project.meta.collaborators }}</p>
         <ContentRenderer :value="project" class="authentic-sans"/>
@@ -113,7 +113,7 @@ const { data: project } = await useAsyncData(`project-${slug}`, async () => {
   display: block
   padding-bottom: 40px
 
-a
+.underline
   text-decoration: underline 1px
   text-underline-offset: 1.5px
   border-style: none !important
