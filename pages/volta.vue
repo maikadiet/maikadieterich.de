@@ -12,24 +12,24 @@
     </div>
 
     <!-- Projects Grid -->
-      <div class="project-grid spacer">
-        <div
-          v-for="project in projects"
-          :key="project.path"
-          class="project-item"
-        >
-          <NuxtLink :to="project.path" >
-            <!-- Thumbnail image if it exists -->
-            <img
-              v-if="project.meta?.thumbnail"
-              :src="`/project/${project.meta.thumbnail}`"
-              :alt="`${project.title} thumbnail`"
-              class="project-thumbnail"
-            />
-            <p class="project-link" > {{ project.title }} </p>
-          </NuxtLink>
-        </div>
+    <div class="project-grid spacer">
+      <div
+        v-for="project in projects"
+        :key="project.path"
+        class="project-item"
+      >
+        <NuxtLink :to="project.path" >
+          <!-- Thumbnail image if it exists -->
+          <img
+            v-if="project.meta?.thumbnail"
+            :src="`/project/${project.meta.thumbnail}`"
+            :alt="`${project.title} thumbnail`"
+            class="project-thumbnail"
+          />
+          <p class="project-link" > {{ project.title }} </p>
+        </NuxtLink>
       </div>
+    </div>
 
     <NuxtLink to="/">Hier gehts zu meinen weiteren Arbeiten</NuxtLink>
   </div>
@@ -44,11 +44,6 @@ function getRandomEmoji() {
 // Get all content
 const { data: allContent } = await useAsyncData('all-content', async () => {
   return await queryCollection('content').all()
-})
-
-// Separate homepage content and projects
-const homepageContent = computed(() => {
-  return allContent.value?.find(item => item.path === '/')
 })
 
 // Array of project titles to display (customize this as needed)

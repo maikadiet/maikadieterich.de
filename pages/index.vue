@@ -51,11 +51,6 @@ const { data: allContent } = await useAsyncData('all-content', async () => {
   return await queryCollection('content').all()
 })
 
-// Separate homepage content and projects
-const homepageContent = computed(() => {
-  return allContent.value?.find(item => item.path === '/')
-})
-
 const activeFilters = ref([])
 
 const projects = computed(() => {
