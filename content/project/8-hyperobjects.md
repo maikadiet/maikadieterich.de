@@ -4,9 +4,9 @@ title: Hyperobjects
 metadata: Installation
 urls:
 collaborators: 
-thumbnail: "hyperobjects.png"
-images: []
-videos: []
+thumbnail: "hyperobjects_invitation.png"
+images: ['hyperobjects_invitation.png' ,'_DSC2777.jpeg', '_DSC2787.jpeg']
+videos: ['https://www.youtube.com/embed/_-zIMUKpqw0']
 ---
 Hyperobject is a term for complex systems such as climate change or the internet. Entities that extend massively across space and time, so that we humans cannot perceive them, but can only recognise them through data collection and evaluation. With digitalisation progressing worldwide, the amount of data we can collect and analyse grows. This in turn means that more and more complex hyperobjects are being discovered. Thus, the question of how hyperobjects can be communicated properly, once again allowing sensory and emotional engagement becomes more and more relevant.
 

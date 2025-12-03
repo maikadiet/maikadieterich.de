@@ -5,7 +5,7 @@ metadata: Installation
 urls:
 collaborators: 
 thumbnail: "Fingerprinting-language.png"
-images: []
+images: ['Fingerprinting-language.png', 'Still here70 Large.jpeg', 'Still here72 Large.jpeg']
 videos: []
 ---
 This work is an experiment on finding a visual form for the aesthetics of language. Grammatical values from seven different languages are read by the programme and used to determine the look and behaviour of each animation. Unique visuals are created each time the programme is run.

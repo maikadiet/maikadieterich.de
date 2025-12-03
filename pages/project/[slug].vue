@@ -14,8 +14,8 @@
       </div>
 
       <!-- Images -->
-      <div class="col-7">
         <!-- Show images if they exist -->
+      <div class="col-7">
         <div v-if="project.meta?.images && project.meta.images.length > 0">
           <div
             v-for="(image, index) in project.meta.images"
@@ -43,6 +43,21 @@
         <div v-else>
           <p>No images available for this project.</p>
         </div>
+
+          <!-- Show video if it exists -->
+          <div v-if="project.meta?.videos && project.meta.videos.length > 0">
+            <div
+                v-for="(video, index) in project.meta.videos"
+                :key="index"
+                class="project-video"
+            >
+              <iframe
+                  :src="video + '?controls=0&modestbranding=1&rel=0&showinfo=0'"
+                  allowfullscreen
+                  class="project-iframe"
+              />
+            </div>
+          </div>
       </div>
     </div>
   </div>
@@ -75,5 +90,14 @@ const { data: project } = await useAsyncData(`project-${slug}`, async () => {
   height: 100vh
   overflow-y: auto
   padding-right: 1rem /* Optional: add space for scrollbar */
+
+.project-iframe
+  width: 100%
+  height: auto
+  aspect-ratio: 16 / 9
+  border: none
+  box-shadow: none
+  display: block
+  padding-bottom: 40px
 
 </style>

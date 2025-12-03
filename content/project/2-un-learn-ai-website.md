@@ -5,8 +5,8 @@ metadata: Web
 urls: https://gestaltung.unlearn.ai/
 collaborators: 
 thumbnail: "unlearn-ai-web.png"
-images: []
-videos: []
+images: ['unlearn-ai-web.png']
+videos: [https://youtube.com/embed/7Q_S6UkP-YQ]
 ---
 The Un/learn AI publication series consists of three parts:
 Approaching, Navigating and Integrating AI in Aesthetic Practices, which provides insights into the four-year research project KITeGG. The three books contain articles by KITeGG researchers and visiting lecturers, student projects, as well as materials from the Summer and Winter Schools.
