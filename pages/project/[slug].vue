@@ -113,4 +113,8 @@ const { data: project } = await useAsyncData(`project-${slug}`, async () => {
   display: block
   padding-bottom: 40px
 
+a
+  text-decoration: underline 1px
+  text-underline-offset: 1.5px
+  border-style: none !important
 </style>

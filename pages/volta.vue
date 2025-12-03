@@ -6,7 +6,7 @@
         <div class="header-text">
           <p>Hallo Volta <span>{{ getRandomEmoji() }}</span></p>
           <p>Ich bin entwickle und gestalte leidenschaftlich gerne Websites. Hier seht ihr einige Seiten an denen ich in den letzten Jahren gearbeitet habe.</p>
-          <p class="spacer">Ich liebe es mich in neue Themen und Technologien zu vertiefen und diese spielerisch und einladend nach außen zu öffnen. Ich freue mich darauf, euch bald kennen zu lernen <span>{{ getRandomEmoji() }}</span><span>{{ getRandomEmoji() }}</span></p>
+          <p class="spacer">Ich liebe es mich in neue Themen und Technologien zu vertiefen und diese spielerisch und einladend nach außen zu öffnen. Ich freue mich darauf, euch kennen zu lernen <span>{{ getRandomEmoji() }}</span><span>{{ getRandomEmoji() }}</span></p>
         </div>
       </div>
     </div>
@@ -55,7 +55,9 @@ const homepageContent = computed(() => {
 const selectedProjectTitles = ref([
   'Un/learn AI Website',
   'Learning platform',
-  'Gestaltung AI'
+  'Gestaltung AI',
+  'Limbus',
+  'Tanz auf dem Netz'
 ])
 
 const projects = computed(() => {
