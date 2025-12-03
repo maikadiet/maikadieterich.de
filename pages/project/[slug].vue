@@ -3,13 +3,13 @@
     <div class="grid">
       <!-- Main Content -->
       <div class="col-5 sticky">
-        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-title">{{ project.title }}</p>
         <div class="metadata">
-          <h5 class="no-margin">{{ project.meta.date }}</h5>
-          <h5 class="no-margin">{{ project.meta.metadata }}</h5>
-          <h5 class="no-margin">{{ project.meta.collaborators }}</h5>
-          <h5 class="no-margin">{{ project.meta.urls }}</h5>
+          <p class="no-margin">{{ project.meta.date }}</p>
+          <p class="no-margin">{{ project.meta.metadata }}</p>
+          <a :href="`${project.meta.urls}`" target="_blank" rel="noopener noreferrer" class="no-margin">Go to Website</a>
         </div>
+          <p class="margin-bottom">{{ project.meta.collaborators }}</p>
         <ContentRenderer :value="project" class="authentic-sans"/>
       </div>
 
@@ -78,11 +78,24 @@ const { data: project } = await useAsyncData(`project-${slug}`, async () => {
 
 <style lang="sass">
 .metadata
-  margin-bottom: 40px
   max-width: 300px
+  display: flex
+  flex-wrap: wrap
+  gap: 1rem
+  align-items: center
+  & *
+    padding: 0.125rem 0.5rem
+    border-color: var(--color-typography)
+    border-style: dashed
+    border-width: 1px
+    box-sizing: border-box
+    width: fit-content
 
 .no-margin
   margin: 0 0 5px 0
+
+.margin-bottom
+  margin: 10px 0 40px 0
 
 .sticky
   position: sticky

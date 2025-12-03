@@ -1,4 +1,5 @@
 @import './grid'
+@import './fonts'
 
 :root
   /* Colors */
@@ -33,6 +34,8 @@
 
 .authentic-sans
   font-family: var(--font-family-authentic), sans-serif
+  font-weight: 90
+  font-size: 1.1rem
 
 /* Buttons */
 button
@@ -109,10 +112,20 @@ header
 nav
   display: flex
   align-items: flex-end
+  gap: 20px
   & > *
-    margin-left: 20px
+    margin-top: 0
+    padding: 0.125rem 0.5rem
+    text-decoration: none
+    background-color: var(--color-background)
+    color: var(--color-typography)
+    box-sizing: border-box
+    width: fit-content
 
 a:hover
+  font-style: italic
+
+a.router-link-active
   font-style: italic
 
 /* Paragraphs */
