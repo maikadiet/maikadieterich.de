@@ -2,7 +2,7 @@
   <div class="container">
     <div class="grid">
       <!-- Homepage Content - Takes 2/3 width (8 out of 12 columns) -->
-      <div v-if="homepageContent" class="col-8">
+      <div class="col-8">
         <div class="header-text">
           <p>Nice to meet you <span>{{ emoji }}</span></p>
           <p>My name is Maika, I am a designer based in Basel.</p>

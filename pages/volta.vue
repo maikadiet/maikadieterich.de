@@ -2,7 +2,7 @@
   <div class="container">
     <div class="grid">
       <!-- Homepage Content - Takes 2/3 width (8 out of 12 columns) -->
-      <div v-if="homepageContent" class="col-8">
+      <div class="col-8">
         <div class="header-text">
           <p>Hallo Volta <span>{{ getRandomEmoji() }}</span></p>
           <p>Ich entwickle und gestalte leidenschaftlich gerne Websites. Hier seht ihr einige Seiten an denen ich in den letzten Jahren gearbeitet habe.</p>
