@@ -45,7 +45,7 @@
 p
   font-family: var(--font-family-authentic), sans-serif
   font-weight: 60
-  font-size: 0.8rem
+  font-size: var(--font-size-sm)
 .spacer
   margin-top: 20px
 

@@ -4,7 +4,8 @@
       <!-- Homepage Content - Takes 2/3 width (8 out of 12 columns) -->
       <div v-if="homepageContent" class="col-8">
         <div class="header-text">
-          <ContentRenderer :value="homepageContent"/>
+          <p>Nice to meet you <span>{{ emoji }}</span></p>
+          <p>My name is Maika, I am a designer based in Basel.</p>
         </div>
       </div>
     </div>
@@ -42,6 +43,9 @@
 </template>
 
 <script setup>
+const emojis = ['💓', '✨', '😊', '💫', '👩‍💻', '🕸️', '🪲', '🪸', '🌦', '️🫧', '🍋', '🧃', '🏔', '️❤️‍🔥']
+const emoji = ref(emojis[Math.floor(Math.random() * emojis.length)])
+
 // Get all content
 const { data: allContent } = await useAsyncData('all-content', async () => {
   return await queryCollection('content').all()

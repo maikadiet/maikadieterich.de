@@ -2,28 +2,30 @@
   <div class="container">
     <div class="grid">
       <!-- About Paragraph - Takes 2/3 width (8 out of 12 columns) -->
-      <div v-if="about" class="col-8">
+      <div class="col-8">
         <div class="header-text">
-          <ContentRenderer :value="about"/>
+          <p>Nice to meet you <span>{{ getRandomEmoji() }}</span></p>
+          <p>My name is Maika, I am a designer based in Basel. This winter I am writing my MA thesis in Transversal Design.</p>
+          <p>I am currently fascinated by feminist infrastructure, alternative low-tech practices, situated software and {{ getRandomEmoji() }}{{ getRandomEmoji() }}{{ getRandomEmoji() }}.  Please get in touch ✉️</p>
         </div>
       </div>
     </div>
 
     <!-- Three Column Layout for CV Data -->
     <div v-if="about && about.meta" class="grid" style="margin-top: 3rem">
-      <!-- Exhibitions Column -->
+      <!-- CV Column -->
       <div class="col-4">
-        <h3>Exhibitions</h3>
+        <h3>Vita</h3>
         <ul class="cv-list">
-          <li v-for="(item, index) in (about.meta.exhibitions || [])" :key="`exhibition-${index}`">
-            <span v-if="item">{{ item }}</span>
+          <li v-for="(item, index) in (about.meta.vita || [])" :key="`vita-${index}`">
+            {{ item }}
           </li>
         </ul>
       </div>
 
-      <!-- Teaching & Publications Column -->
+      <!-- Teaching Column -->
       <div class="col-4">
-        <h3>Teaching & Publications</h3>
+        <h3>Teaching</h3>
         <ul class="cv-list">
           <li v-for="(item, index) in (about.meta.teaching_and_publications || [])" :key="`teaching-${index}`">
             {{ item }}
@@ -31,12 +33,12 @@
         </ul>
       </div>
 
-      <!-- CV Column -->
+      <!-- Exhibitions Column -->
       <div class="col-4">
-        <h3>CV</h3>
+        <h3>Exhibitions & Publications</h3>
         <ul class="cv-list">
-          <li v-for="(item, index) in (about.meta.cv || [])" :key="`cv-${index}`">
-            {{ item }}
+          <li v-for="(item, index) in (about.meta.exhibitions || [])" :key="`exhibition-${index}`">
+            <span v-if="item">{{ item }}</span>
           </li>
         </ul>
       </div>
@@ -45,6 +47,12 @@
 </template>
 
 <script setup>
+const emojis = ['💓', '✨', '😊', '💫', '👩‍💻', '🕸️', '🪲', '🪸', '🌦', '️🫧', '🍋', '🧃', '🏔', '️❤️‍🔥', '🪄']
+
+function getRandomEmoji() {
+  return emojis[Math.floor(Math.random() * emojis.length)]
+}
+
 const { data: allContent } = await useAsyncData('all-content', async () => {
   return await queryCollection('content').all()
 })
@@ -69,4 +77,6 @@ h3
   margin-bottom: 0.5rem
   font-size: var(--font-size-sm)
   line-height: 1.4
+  font-family: var(--font-family-authentic), sans-serif
+  font-weight: 60
 </style>

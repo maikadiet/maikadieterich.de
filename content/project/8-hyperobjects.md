@@ -1,7 +1,7 @@
 ---
 date: 2022
 title: Hyperobjects
-metadata: Installation
+metadata: Installation, Research
 urls:
 collaborators: 
 thumbnail: "hyperobjects_invitation.png"
