@@ -43,7 +43,7 @@
 </template>
 
 <script setup>
-const emojis = ['💓', '✨', '😊', '💫', '👩‍💻', '🕸️', '🪲', '🪸', '🌦', '️🫧', '🍋', '🧃', '🏔', '️❤️‍🔥']
+const emojis = ['💓', '✨', '😊', '💫', '👩‍💻', '🕸️', '🪲', '🪸', '🌦', '️🫧', '🍋', '🧃', '🏔', '️❤️‍🔥', '🪄', '👾', '🧚', '🕺', '🪰', '🌈', '🌊', '🪩']
 const emoji = ref(emojis[Math.floor(Math.random() * emojis.length)])
 
 // Get all content
@@ -84,5 +84,5 @@ function toggleFilter(filter) {
 }
 </script>
 
-<style scoped>
+<style lang="sass" scoped>
 </style>

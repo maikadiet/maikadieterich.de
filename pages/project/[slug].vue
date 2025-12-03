@@ -102,7 +102,10 @@ const { data: project } = await useAsyncData(`project-${slug}`, async () => {
   top: 0
   height: 100vh
   overflow-y: auto
-  padding-right: 1rem /* Optional: add space for scrollbar */
+  padding-right: 1rem
+  @media (max-width: $breakpoint-mobile)
+    position: relative
+    height: auto
 
 .project-iframe
   width: 100%
