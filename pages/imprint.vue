@@ -41,6 +41,8 @@
 .two-column-content
   column-count: 3
   column-gap: 2rem
+  @media (max-width: $breakpoint-mobile)
+    column-count: 1
 
 p
   font-family: var(--font-family-authentic), sans-serif

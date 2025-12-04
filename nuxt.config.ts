@@ -3,6 +3,23 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
+  // Enable SSR for server-side rendering during build
+  ssr: true,
+
+  // Configure Nitro for static generation
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/sitemap.xml'],
+      failOnError: false
+    }
+  },
+
+  routeRules: {
+    // Cache all project pages
+    '/project/**': { cache: { maxAge: 60 * 60 * 24 * 365 } }
+  },
+
   css: ['~/assets/css/main.sass'],
     vite: {
         css: {

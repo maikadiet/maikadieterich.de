@@ -4,7 +4,7 @@
       <!-- Homepage Content - Takes 2/3 width (8 out of 12 columns) -->
       <div class="col-8">
         <div class="header-text">
-          <p>Nice to meet you <span>{{ emoji }}</span></p>
+          <client-only><p>Nice to meet you <span>{{ emoji }}</span></p></client-only>
           <p>My name is Maika, I am a designer based in Basel.</p>
         </div>
       </div>

@@ -4,9 +4,10 @@
       <!-- About Paragraph - Takes 2/3 width (8 out of 12 columns) -->
       <div class="col-8">
         <div class="header-text">
-          <p>Nice to meet you <span>{{ getRandomEmoji() }}</span></p>
+          <client-only><p>Nice to meet you <span>{{ getRandomEmoji() }}</span></p>
           <p>My name is Maika, I am a designer based in Basel. This winter I am writing my MA thesis in Transversal Design.</p>
           <p>I am currently fascinated by feminist infrastructure, alternative low-tech practices, situated software and {{ getRandomEmoji() }}{{ getRandomEmoji() }}{{ getRandomEmoji() }}.  Please get in touch ✉️</p>
+          </client-only>
         </div>
       </div>
     </div>
