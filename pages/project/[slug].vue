@@ -78,7 +78,6 @@ const { data: project } = await useAsyncData(`project-${slug}`, async () => {
 
 <style lang="sass">
 .metadata
-  max-width: 300px
   display: flex
   flex-wrap: wrap
   gap: 1rem
