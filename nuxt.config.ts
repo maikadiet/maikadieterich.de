@@ -3,8 +3,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
-  // Enable SSR for server-side rendering during build
-  ssr: true,
+  // Disable SSR for static generation
+  ssr: false,
 
   // Configure Nitro for static generation
   nitro: {
