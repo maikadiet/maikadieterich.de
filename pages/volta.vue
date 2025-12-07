@@ -5,8 +5,8 @@
       <div class="col-8">
         <div class="header-text">
           <p>Hallo Volta <span>{{ getRandomEmoji() }}</span></p>
-          <p>Ich entwickle und gestalte leidenschaftlich gerne Websites. Hier seht ihr einige Seiten an denen ich in den letzten Jahren gearbeitet habe.</p>
-          <p class="spacer">Ich liebe es mich in neue Themen und Technologien zu vertiefen und diese spielerisch und einladend nach außen zu öffnen. Ich freue mich darauf, euch kennen zu lernen <span>{{ getRandomEmoji() }}</span><span>{{ getRandomEmoji() }}</span></p>
+          <p>Ich entwickle und gestalte leidenschaftlich gerne Websites. Ich liebe es mich in neue Themen und Technologien zu vertiefen und diese spielerisch und einladend nach außen zu öffnen.</p>
+          <p class="spacer">Hier seht ihr einige Seiten an denen ich in den letzten Jahren gearbeitet habe. Ich freue mich darauf, euch kennen zu lernen <span>{{ getRandomEmoji() }}</span><span>{{ getRandomEmoji() }}</span></p>
         </div>
       </div>
     </div>
