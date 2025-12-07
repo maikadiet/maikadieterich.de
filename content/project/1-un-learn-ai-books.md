@@ -1,9 +1,9 @@
 ---
 date: 2025
-title: Un/learn AI
+title: Un/learn AI Books
 metadata: Print
 urls: https://gestaltung.unlearn.ai/
-collaborators: Together with Lars Hembacher, Paul Eßer, Francesco Scheffzcyk
+collaborators: Together with Lars Hembacher, Paul Eßer and Francesco Scheffzcyk.
 thumbnail: "Kiteeg_Katalog22014.jpg"
 images: ['Kiteeg_Katalog22088.jpg', 'Kiteeg_Katalog22103.jpg', 'Kiteeg_Katalog22117.jpg', 'Kiteeg_Katalog22134.jpg', 'Kiteeg_Katalog22189.jpg', 'Kiteeg_Katalog22205.jpg',]
 videos: []
@@ -16,4 +16,4 @@ The publications are available as limited-edition prints or as PDF downloads on 
 Built as a web-to-print publication, the pipeline contains multiple Natural-Language-Processing algorithms that contribute to the books' navigation system as well as to the visual and structural design. For instance, the texts across all three books have been chunked and semantically compared.
 If a chunk has a high semantic similarity to another chunk  in one the books, that chunk is given as a chunk reference in the margin.
 
-Lars Hembacher and Paul Eßer designed the basic layout of the three books and setup the printing pipeline. Francesco Scheffczyk took over to finish the pipeline and layout of the three books and the website.
+Lars Hembacher and Paul Eßer designed the basic layout of the three books and setup the printing pipeline. Francesco Scheffczyk and I took over to finish the pipeline and layout of the three books and the website.

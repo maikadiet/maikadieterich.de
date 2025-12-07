@@ -3,7 +3,7 @@ date: 2025
 title: Publishing Carefully?
 metadata: Print, Research
 urls:
-collaborators: Design and production together with Antoine Barras and Ann Luca Weiß.
+collaborators: Together with Antoine Barras and Ann Luca Weiß.
 thumbnail: "IMG_3695.jpeg"
 images: ['publishing-carefully_title.jpeg', 'IMG_3695.jpeg', 'pub-care-process.JPG', 'IMG_3705.jpeg']
 videos: []

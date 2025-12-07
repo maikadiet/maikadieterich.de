@@ -7,7 +7,7 @@
         <div class="metadata">
           <p class="no-margin">{{ project.meta.date }}</p>
           <p class="no-margin">{{ project.meta.metadata }}</p>
-          <a class="underline no-margin" :href="`${project.meta.urls}`" target="_blank" rel="noopener noreferrer">Go to Website</a>
+          <a v-if="project.meta.urls" class="underline no-margin" :href="`${project.meta.urls}`" target="_blank" rel="noopener noreferrer">Go to Website</a>
         </div>
           <p class="margin-bottom">{{ project.meta.collaborators }}</p>
         <ContentRenderer :value="project" class="authentic-sans"/>
