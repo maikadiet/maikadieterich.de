@@ -4,8 +4,8 @@ title: Learning platform
 metadata: Web
 urls: https://llp.kitegg.de/
 collaborators: Together with Jean Böhm, Isabela Dimarco and Francesco Scheffczyk.
-thumbnail: "unlearn_49.png"
-images: ['unlearn_55.png', 'llp_07.png', 'llp_24.png']
+thumbnail: "llp-kitegg-39.37.png"
+images: ['llp-kitegg-41.43.png', 'llp-kitegg-42.00.png', 'llp-kitegg-39.48.png', 'llp-kitegg-42.17.png', 'llp-kitegg-41.12.png']
 videos: []
 ---
 The learning platform was developed in the KITeGG research project as the central place for access to the GPU cluster. Server reservations, service hosting and student access can be defined by teachers or researchers on the platform.
