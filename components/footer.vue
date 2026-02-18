@@ -11,7 +11,7 @@
 
 <style lang="sass">
 .footer
-  margin-top: 100px
+  margin-top: 4em
   display: flex
   flex-direction: row
   justify-content: space-between

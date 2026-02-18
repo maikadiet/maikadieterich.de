@@ -2,7 +2,7 @@
 date: 2025
 title: Un/learn AI Website
 metadata: Web
-urls: https://gestaltung.unlearn.ai/
+urls: https://unlearn.gestaltung.ai/
 collaborators: Together with Jean Böhm and Francesco Scheffczyk.
 thumbnail: "unlearn-ai-web.png"
 images: ['unlearn-ai-web.png', 'unlearn_7.40.png', 'unlearn_8.03.png', 'unlearn_9.43.png']
