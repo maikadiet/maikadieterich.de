@@ -28,17 +28,17 @@
       <div class="col-4">
         <h3>Teaching</h3>
         <ul class="cv-list">
-          <li v-for="(item, index) in (about.meta.teaching_and_publications || [])" :key="`teaching-${index}`">
+          <li v-for="(item, index) in (about.meta.teaching || [])" :key="`teaching-${index}`">
             {{ item }}
           </li>
         </ul>
       </div>
 
-      <!-- Exhibitions Column -->
+      <!-- Publications Column -->
       <div class="col-4">
-        <h3>Exhibitions & Publications</h3>
+        <h3>Publications & Exhibitions</h3>
         <ul class="cv-list">
-          <li v-for="(item, index) in (about.meta.exhibitions || [])" :key="`exhibition-${index}`">
+          <li v-for="(item, index) in (about.meta.publications || [])" :key="`publications-${index}`">
             <span v-if="item">{{ item }}</span>
           </li>
         </ul>
