@@ -4,7 +4,7 @@ title: Un/learn AI Website
 metadata: Web
 urls: https://unlearn.gestaltung.ai/
 collaborators: Together with Jean Böhm and Francesco Scheffczyk.
-thumbnail: "unlearn-ai-web.png"
+thumbnail: "unlearn-header-ratio.png"
 images: ['unlearn-ai-web.png', 'unlearn_7.40.png', 'unlearn_8.03.png', 'unlearn_9.43.png']
 videos: [https://youtube.com/embed/7Q_S6UkP-YQ]
 ---
