@@ -5,7 +5,7 @@
       <div class="col-8">
         <div class="header-text">
           <client-only><p>Nice to meet you <span>{{ emoji }}</span></p></client-only>
-          <p>My name is Maika, I am a designer based in Basel.</p>
+          <p>My name is Maika, I am a designer and creative developer based in Basel.</p>
         </div>
       </div>
     </div>

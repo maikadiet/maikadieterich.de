@@ -5,7 +5,7 @@
       <div class="col-8">
         <div class="header-text">
           <client-only><p>Nice to meet you <span>{{ getRandomEmoji() }}{{ getRandomEmoji() }}</span></p>
-          <p>My name is Maika, I am a designer based in Basel. This winter I am writing my MA thesis in Transversal Design.</p>
+          <p>My name is Maika, I am a designer and creative developer based in Basel. This winter I am writing my MA thesis in Transversal Design.</p>
           <p>I am currently thinking about alternative low-tech practices and situated software. Please get in touch 💌</p>
           </client-only>
         </div>
