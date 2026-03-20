@@ -73,3 +73,10 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Optimization
+
+To ensure fast loading times for images, this project recommends using **@nuxt/image**.
+
+- [Nuxt Image Documentation](https://image.nuxt.com/)
+- Use `<NuxtImg>` instead of `<img>` for automatic WebP conversion and resizing.
