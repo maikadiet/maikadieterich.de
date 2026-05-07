@@ -35,7 +35,8 @@ export default defineNuxtConfig({
     head: {
       title: 'Maika Dieterich',
       meta: [
-        { name: 'description', content: 'Portfolio and projects of Maika Dieterich, Designer and Software Engineer in Basel and Germany.' }
+        { name: 'description', content: 'Portfolio and projects of Maika Dieterich, Designer and Software Engineer in Basel and Germany.' },
+        { name: 'google-site-verification', content: 'nG0MTBqyeBtKeLpu8NkI-aXQ01niWNtf-_ByeCbVfac' }
       ],
       htmlAttrs: {
         lang: 'en',
