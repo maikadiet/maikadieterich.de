@@ -26,6 +26,8 @@
   },
   "devDependencies": {
     "@nuxt/fonts": "0.11.4",
+    "@nuxtjs/robots": "^6.0.8",
+    "@nuxtjs/sitemap": "^8.0.15",
     "sass": "^1.91.0",
     "sass-embedded": "^1.91.0"
   }

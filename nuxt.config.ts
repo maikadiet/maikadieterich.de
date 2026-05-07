@@ -3,8 +3,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
-  // Disable SSR for static generation
-  ssr: false,
+  // Enable SSR for Static Site Generation (outputs SEO-friendly HTML)
+  ssr: true,
 
   // Configure Nitro for static generation
   nitro: {
@@ -33,6 +33,13 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      title: 'Maika Dieterich',
+      meta: [
+        { name: 'description', content: 'Portfolio and projects of Maika Dieterich, Designer and Software Engineer in Basel and Germany.' }
+      ],
+      htmlAttrs: {
+        lang: 'en',
+      },
       link: [
         {
           rel: 'icon',
@@ -47,8 +54,15 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/fonts',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots'
   ],
+
+  site: {
+    url: 'https://maikadieterich.de',
+    name: 'Maika Dieterich'
+  },
 
   fonts: {
     provider: 'google',
