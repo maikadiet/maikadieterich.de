@@ -22,7 +22,7 @@
             :key="index"
             class="project-image"
           >
-            <img
+            <nuxt-img
               :src="`/project/${image}`"
               :alt="`Project image ${index + 1}`"
               style="width: 100%; height: auto;"
@@ -32,7 +32,7 @@
 
         <!-- Show thumbnail if no images exist -->
         <div v-else-if="project.meta?.thumbnail" class="project-image">
-          <img
+          <nuxt-img
             :src="`/project/${project.meta.thumbnail}`"
             :alt="`${project.title} thumbnail`"
             style="width: 100%; height: auto;"

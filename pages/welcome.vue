@@ -20,7 +20,7 @@
       >
         <NuxtLink :to="project.path" >
           <!-- Thumbnail image if it exists -->
-          <img
+          <nuxt-img
             v-if="project.meta?.thumbnail"
             :src="`/project/${project.meta.thumbnail}`"
             :alt="`${project.title} thumbnail`"
