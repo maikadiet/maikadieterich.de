@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <p class="footer-text">© Maika Dieterich 2025</p>
+    <p class="footer-text">© Maika Dieterich 2026</p>
     <nuxt-link class="footer-text float-right" to="/imprint">Imprint & Privacy Policy</nuxt-link>
   </div>
 </template>
