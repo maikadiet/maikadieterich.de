@@ -1,12 +1,12 @@
 ---
 vita:
  - "2026 – ICT Campus Coach, Basel"
+ - "2024-2026 — M.A. Transversal Design, HGK Basel FHNW"
  - "2022–2025 — Research Associate Technology and Design KITeGG, Mainz University of Applied Sciences"
  - "2021–2022 — Research Associate Project Coordination #vortanz, Mainz University of Applied Sciences"
  - "2022 — Freelance Data Analysis & Writing, TheStackReport.xyz"
- - "since 2024 — M.A. Transversal Design, HGK Basel FHNW"
- - "2018–2022 — B.A. Communication Design, Mainz University of Applied Sciences"
  - "2020 — Semester Abroad, Malmö University, Interaction Design"
+ - "2018–2022 — B.A. Communication Design, Mainz University of Applied Sciences"
  - "since 2018 — Various freelance projects in Graphics, Web & Frontend"
 
 teaching:
