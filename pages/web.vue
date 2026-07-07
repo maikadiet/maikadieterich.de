@@ -4,9 +4,8 @@
       <!-- Homepage Content - Takes 2/3 width (8 out of 12 columns) -->
       <div class="col-8">
         <div class="header-text">
-          <p>Liebes captns Team <span>{{ getRandomEmoji() }}</span></p>
-          <p>Ich entwickle und gestalte leidenschaftlich gerne Websites.</p>
-          <p class="spacer">Hier seht ihr einige Seiten (neben diesem Portfolio) an denen ich in den letzten Jahren gearbeitet habe. Ich würde mich freuen euch kennen zu lernen <span>{{ getRandomEmoji() }}</span> <span>{{ getRandomEmoji() }}</span></p>
+          <p>Hallo du <span>{{ getRandomEmoji() }}</span></p>
+          <p>Ich gestalte und entwickle leidenschaftlich gerne Websites. Hier sind einige Seiten, an denen ich in den letzten Jahren gearbeitet habe. <span>{{ getRandomEmoji() }}</span> <span>{{ getRandomEmoji() }}</span></p>
         </div>
       </div>
     </div>
@@ -48,6 +47,7 @@ const { data: allContent } = await useAsyncData('all-content', async () => {
 
 // Array of project titles to display (customize this as needed)
 const selectedProjectTitles = ref([
+  'Irresistible Infrastructure',
   'Gestaltung AI',
   'Learning platform',
   'Un/learn AI Website'
@@ -78,7 +78,7 @@ a
 
 .special-grid
   display: grid
-  grid-template-columns: repeat(3, 1fr) // 3 columns
+  grid-template-columns: repeat(2, 1fr) // columns
   grid-column-gap: var(--grid-gutter)
   grid-row-gap: var(--grid-gutter)
   @media (max-width: $breakpoint-mobile)
