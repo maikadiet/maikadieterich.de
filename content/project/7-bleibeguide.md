@@ -1,7 +1,7 @@
 ---
 date: 2026
 title: Bleibeguide
-metadata: Work in process
+metadata: Work in progress
 urls: 
 collaborators: Together with Ann Luca Weiss and others.
 thumbnail: "bleibeguideLarge.jpeg"
