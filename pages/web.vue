@@ -47,6 +47,7 @@ const { data: allContent } = await useAsyncData('all-content', async () => {
 
 // Array of project titles to display (customize this as needed)
 const selectedProjectTitles = ref([
+  'Bleibeguide',
   'Irresistible Infrastructure',
   'Gestaltung AI',
   'Learning platform',
@@ -78,7 +79,7 @@ a
 
 .special-grid
   display: grid
-  grid-template-columns: repeat(2, 1fr) // columns
+  grid-template-columns: repeat(3, 1fr) // columns
   grid-column-gap: var(--grid-gutter)
   grid-row-gap: var(--grid-gutter)
   @media (max-width: $breakpoint-mobile)
