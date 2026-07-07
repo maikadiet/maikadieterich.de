@@ -5,7 +5,7 @@
       <div class="col-8">
         <div class="header-text">
           <p>Hallo du <span>{{ getRandomEmoji() }}</span></p>
-          <p>Ich gestalte und entwickle leidenschaftlich gerne Websites. Hier sind einige Seiten, an denen ich in den letzten Jahren gearbeitet habe. <span>{{ getRandomEmoji() }}</span> <span>{{ getRandomEmoji() }}</span></p>
+          <p>Ich gestalte und entwickle leidenschaftlich gerne Websites. Hier sind einige Seiten, an denen ich in den letzten Jahren gearbeitet habe.</p>
         </div>
       </div>
     </div>
