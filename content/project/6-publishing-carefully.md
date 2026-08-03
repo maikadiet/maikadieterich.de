@@ -5,7 +5,7 @@ metadata: Print, Research
 urls:
 collaborators: Together with Antoine Barras and Ann Luca Weiß.
 thumbnail: "IMG_3695.jpeg"
-images: ['publishing-carefully_title.jpeg', 'IMG_3695.jpeg', 'pub-care-process.JPG', 'IMG_3705.jpeg']
+images: ['publishing-carefully_title.jpeg', 'IMG_3705.jpeg', 'pub-care-stack.jpeg', 'pub-care-process.JPG']
 videos: []
 ---
 Publishing Carefully was our text contribution to the first Transversal Design publication. It describes the design and production process of the book and is itself printed on an old matrix printer from 1986, which we bought second-hand in Freiburg and transported back to Basel by bike.
